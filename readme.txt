@@ -20,7 +20,7 @@ WP Fail2ban supports adding proxy IP addresses to its configuration and will ins
 
 This plugin automatically updates the published IP addresses for popular proxy services so that WP Fail2ban plays nicely with them. When those services update their IP ranges, the plugin automatically fetches them.
 
-== Frequently Asked Questions ==
+== FAQ ==
 = How to use? =
 This plugin currently supports Cloudflare and Fastly. Only activate support for one at a time. To enable support, and add either `define('CLOUDFLARE_ENABLED', true);` or `define('FASTLY_ENABLED', true);` to your `wp-config.php` file.
 = Does this plugin support "X"? =
