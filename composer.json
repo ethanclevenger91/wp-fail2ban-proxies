@@ -1,0 +1,18 @@
+{
+    "name": "sterner-stuff/wp-fail2ban-proxies",
+    "description": "Add support for popular proxy services to WP Fail2ban",
+    "type": "wordpress-plugin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ethan Clevenger",
+            "email": "ethan@sternerstuffdesign.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {"SternerStuffWordPress\\WPFail2banProxies\\": "src/"}
+    },
+    "require": {
+        "yahnis-elsts/plugin-update-checker": "^4.7"
+    }
+}
