@@ -18,13 +18,10 @@ $wpFail2banProxiesUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
 	'wp-fail2ban-proxies'
 );
 
-//Optional: If you're using a private repository, specify the access token like this:
-$wpFail2banProxiesUpdateChecker->setAuthentication('your-token-here');
-
 $wpFail2banProxiesUpdateChecker->getVcsApi()->enableReleaseAssets();
 
 if( is_plugin_active( 'wp-fail2ban/wp-fail2ban.php' ) ) {
-	$this->whitelistActiveProxies();
+	wpf2bproxies_whitelist_active_proxies();
 }
 
 function wpf2bproxies_whitelist_active_proxies() {
